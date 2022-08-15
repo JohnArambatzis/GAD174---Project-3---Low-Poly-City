@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
     public bool isPaused;
 
     public GameObject pausePanel;
-    public GameObject pauseOption;
+    
 
     private void Start()
     {
@@ -38,7 +38,7 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0;
 
             pausePanel.SetActive(true);
-            pauseOption.SetActive(true);
+            
         }
     }
 
@@ -47,6 +47,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
 
         pausePanel.SetActive(false);
-        pauseOption.SetActive(false);
+        
     }
 }
